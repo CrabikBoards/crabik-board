@@ -1,6 +1,6 @@
 [package]
 name = "crabik-board"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["kekcheburec <roman.milky.1976@gmail.com>"]
 edition = "2018"
 license = "MIT"

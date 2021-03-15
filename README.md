@@ -1,4 +1,4 @@
-# teensy4-rs
+# crabik-board
 
 Библиотека для работы с платой crabik. Подробнее можно узнать на [crabik.ru](https://crabik.ru/)
 

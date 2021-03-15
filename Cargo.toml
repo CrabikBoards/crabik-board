@@ -1,0 +1,50 @@
+[package]
+name = "crabik-board"
+version = "0.1.0"
+authors = ["kekcheburec <roman.milky.1976@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Библиотека для работы с платой crabik"
+readme = "README.md"
+repository = "https://github.com/CrabikBoards/crabik-board"
+homepage = "https://crabik.ru/"
+categories = ["embedded", "no-std", "hardware-support"]
+keywords = ["embedded", "no_std", "nrf52", "nrf52810", "crabik"]
+
+[dependencies]
+cortex-m = "0.7.1"
+cortex-m-rt = "0.6.13"
+embedded-hal = "0.2.3"
+nrf52810-hal = "0.12.0"
+nrf52810-pac = "0.9"
+log = "0.4.8"
+rtt-target = { version = "0.3.0", features = ["cortex-m"] }
+
+[profile.dev]
+codegen-units = 1
+debug = 2
+debug-assertions = true
+incremental = false
+opt-level = 2
+overflow-checks = true
+
+[profile.release]
+codegen-units = 1
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat'
+opt-level = 's'
+overflow-checks = false
+
+[profile.dev.build-override]
+codegen-units = 8
+debug = false
+debug-assertions = false
+opt-level = 0
+
+[profile.release.build-override]
+codegen-units = 8
+debug = false
+debug-assertions = false
+opt-level = 0

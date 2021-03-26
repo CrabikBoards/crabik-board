@@ -11,6 +11,6 @@
 
 ## Лицензия
 
-Лицензировано под MIT license ([LICENSE-MIT][license-mit] или http://opensource.org/licenses/MIT)
+Лицензировано под MIT license ([LICENSE][license-mit] или http://opensource.org/licenses/MIT)
 
-[license-mit]: LICENSE-MIT
+[license-mit]: LICENSE
